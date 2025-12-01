@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Mapa-múndi estilizado">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1e3799" />
+      <stop offset="100%" stop-color="#0a3d62" />
+    </linearGradient>
+    <filter id="map-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Ocean (fixed to site --panel color) -->
+  <rect width="400" height="300" fill="#1e3799" rx="12" ry="12" />
+
+  <!-- Continents (fill uses site --accent color) -->
+  <path fill="#f6b93b" stroke="rgba(2,6,23,0.95)" stroke-width="1.4" stroke-linejoin="round" filter="url(#map-shadow)"
+    d="M38 88 C50 70 78 64 108 72 C130 78 150 92 150 108 C148 118 140 126 128 130 C110 132 96 126 82 120 C68 114 54 104 44 96 C40 92 38 90 38 88 Z" />
+
+  <path fill="#f6b93b" stroke="rgba(2,6,23,0.95)" stroke-width="1.4" stroke-linejoin="round" filter="url(#map-shadow)"
+    d="M92 136 C100 122 116 116 132 124 C144 134 150 150 146 166 C140 184 128 196 112 204 C98 208 90 204 88 194 C86 180 86 162 92 136 Z" />
+
+  <path fill="#f6b93b" stroke="rgba(2,6,23,0.95)" stroke-width="1.4" stroke-linejoin="round" filter="url(#map-shadow)"
+    d="M214 146 C234 134 256 132 278 144 C292 156 300 176 296 196 C288 214 268 224 248 218 C232 206 222 186 214 146 Z" />
+
+  <path fill="#f6b93b" stroke="rgba(2,6,23,0.95)" stroke-width="1.4" stroke-linejoin="round" filter="url(#map-shadow)"
+    d="M250 86 C272 68 300 64 328 76 C345 86 358 106 356 128 C352 144 340 156 322 162 C304 162 288 154 272 148 C260 138 254 118 250 100 Z" />
+
+  <path fill="#f6b93b" stroke="rgba(2,6,23,0.95)" stroke-width="1.4" stroke-linejoin="round" filter="url(#map-shadow)"
+    d="M322 196 C336 186 352 184 368 194 C376 204 372 214 362 220 C348 224 334 218 326 210 C322 206 322 198 322 196 Z" />
+</svg>
